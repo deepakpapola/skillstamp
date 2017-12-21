@@ -1,0 +1,226 @@
+
+<header>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 col-lg-10 col-xl-11">
+        <div class="logo"><a href="index.html">jjj</a></div>
+        <div class="topinfo">
+          <ul>
+            <li>Ask your Question <span>Courseinfo@skillstamps.com</span></li>
+            <li>Hangout <span>skillstamps@gmail.com</span></li>
+            <li>Skype ID <span>skillstamps</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="col d-none d-lg-block">
+        <div class="topsocial">
+          <ul>
+            <li><a class="fb" href="#">Facebook</a></li>
+            <li><a class="in" href="#">Linkedin</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+	<!--Header section end-->
+	<!--Body section start-->
+	<div class="hmBodyWrap">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-6">
+						<div *ngIf="messages;else signinform">
+								<h2 [ngStyle]="{'color':'green'}">{{messages}}</h2>
+						</div>
+					<ng-template #signinform>
+					<section class="enroleWrap">
+							<h1>Welcome Let's Joing this Course</h1>
+							<ul>
+								<form #mainForm="ngForm" id="main-form" class="input-form" novalidate>
+								<li class="left">
+									<div class="row">
+										<div class="col-sm-12 col-md-5 col-lg-3">
+											</div>
+											<div class="enroleFormSeciton">
+													<div class="row">
+
+														<div class="col-sm-5">
+
+															<div>
+																	<label for="fname" [ngClass]="{'active-cl': newEnrol?.fname}">First Name</label>
+																	<input id="fname" type="text" [(ngModel)]="newEnrol.firstName" name="fname"
+																			class="validate" #fname="ngModel" required min="0">
+																		
+																		<div *ngIf="fname.invalid && (fname.dirty || fname.touched)" class="text-danger">
+																				<p *ngIf="fname.errors.required">first name is required.</p>
+																		</div>
+															</div>
+														</div>
+														
+														<div class="col-sm-5">
+															<div>
+																	<label for="lname" [ngClass]="{'active-cl': newEnrol?.lname}">Last Name</label>
+																	<input id="lname" type="text" [(ngModel)]="newEnrol.lastName" name="lname"
+																			class="validate" #lname="ngModel" required min="0">
+																		
+																		<div *ngIf="lname.invalid && (lname.dirty || lname.touched)" class="text-danger">
+																				<p *ngIf="lname.errors.required">Last name is required.</p>
+																		</div>
+															</div>
+														</div>
+														<div class="col-sm-5">
+																<div>
+																		<label for="uemail" [ngClass]="{'active-cl': newEnrol?.uemail}">Email</label>
+																		<input id="uemail" type="email" [(ngModel)]="newEnrol.email" name="uemail"
+																				class="validate" #uemail="ngModel" required min="0">
+																			
+																			<div *ngIf="uemail.invalid && (uemail.dirty || uemail.touched)" class="text-danger">
+																					<p *ngIf="uemail.errors.required">Email name is required.</p>
+																			</div>
+																</div>
+														</div>
+														<div class="col-sm-5">
+																<div>
+																		<label for="ph" [ngClass]="{'active-cl': newEnrol?.ph}">Phone </label>
+																		<input id="ph" type="email" [(ngModel)]="newEnrol.phone" name="ph"
+																				class="validate" #ph="ngModel" required min="0">
+																			
+																			<div *ngIf="ph.invalid && (ph.dirty || ph.touched)" class="text-danger">
+																					<p *ngIf="ph.errors.required">Phone no. is required.</p>
+																			</div>
+																</div>
+															</div>
+
+															<div class="col-sm-5">
+																	<div>
+																			<label for="cun" [ngClass]="{'active-cl': newEnrol?.cun}">Country </label>
+																			<input id="cun" type="text" [(ngModel)]="newEnrol.country" name="cun"
+																					class="validate" #cun="ngModel" required min="0">
+																				
+																				<div *ngIf="cun.invalid && (cun.dirty || cun.touched)" class="text-danger">
+																						<p *ngIf="cun.errors.required">Country name. is required.</p>
+																				</div>
+																	</div>
+																</div>
+
+																<div class="col-sm-5">
+																		<div>
+																				<label for="city" [ngClass]="{'active-cl': newEnrol?.city}">City </label>
+																				<input id="city" type="text" [(ngModel)]="newEnrol.city" name="city"
+																						class="validate" #city="ngModel" required min="0">
+																					
+																					<div *ngIf="city.invalid && (city.dirty || city.touched)" class="text-danger">
+																							<p *ngIf="city.errors.required">City name. is required.</p>
+																					</div>
+																		</div>
+																	</div>
+
+															<div class="col-sm-5">
+																<div>
+																		<label for="edu" [ngClass]="{'active-cl': newEnrol?.edu}">Higher Educaion </label>
+																		<input id="edu" type="text" [(ngModel)]="newEnrol.education" name="edu"
+																				class="validate" #edu="ngModel" required min="0">
+																			
+																			<div *ngIf="edu.invalid && (edu.dirty || edu.touched)" class="text-danger">
+																					<p *ngIf="edu.errors.required">education name. is required.</p>
+																			</div>
+																</div>
+															</div>
+															<div class="col-sm-5">
+																<label>Refrance From (Email)</label>
+															
+																<input type="text" [(ngModel)]="newEnrol.reference" name="refmail" #refmail="ngModel" email/>
+															</div>
+															<div class="col-sm-5">
+																<div>
+																		<label for="pass" [ngClass]="{'active-cl': newEnrol?.pass}">Password </label>
+																		<input id="pass" type="password" [(ngModel)]="newEnrol.password" name="pass"
+																				class="validate" #pass="ngModel" required min="1">
+																			
+																			<div *ngIf="pass.invalid && (pass.dirty || pass.touched)" class="text-danger">
+																					<p *ngIf="pass.errors.required">Password is required.</p>
+																			</div>
+																</div>
+															
+															</div>
+
+															<div class="col-sm-5">
+
+																	<div>
+																			<label for="repass" [ngClass]="{'active-cl': newEnrol?.confpassword}">Re-Password </label>
+																			<input id="repass" type="text" [(ngModel)]="newEnrol.confpassword" name="repass"
+																					class="validate" #repass="ngModel" required min="0">
+																				
+																				<div *ngIf="repass.invalid && (repass.dirty || repass.touched)" class="text-danger">
+																						<p *ngIf="repass.errors.required">Re-Password is required.</p>
+																				</div>
+																	</div>
+															</div>
+														<div class="col-sm-10">
+															<input type="submit" (click)="enrolnow()" value="Create an Account" >
+															<h3 [ngStyle]="{'color':'red'}" *ngIf="errormsg"> {{errormsg}}</h3>
+
+															<!-- <a routerLink="/login"> 
+																<input type="submit" value="login"> </a>  -->
+														</div>
+													</div>
+												</div>
+									</div>
+								</li>
+							</form>
+							</ul>
+						</section>
+					</ng-template>
+</div>
+				<div class="col-lg-6">
+					<div class="row">
+						<div class="col col-sm-6 col-md-3 col-lg-6">
+							<article> <i><img src="dist/images/benefits/02.svg" width="56" height="56"  alt=""/></i>
+								<p>Hone your skills and be <br/>
+									professionally recognizable <br/>
+									3X Faster </p>
+							</article>
+						</div>
+						<div class="col col-sm-6 col-md-3 col-lg-6">
+							<article> <i><img src="dist/images/benefits/01.svg" width="56" height="56"    alt=""/></i>
+								<p>Join Professional Community<br/>
+									and build your knowledge <br/>
+									with right opportunity</p>
+							</article>
+						</div>
+						<div class="col col-sm-6 col-md-3 col-lg-6">
+							<article> <i><img src="dist/images/benefits/03.svg" width="56" height="56"    alt=""/></i>
+								<p>Latest Course Structure <br/>
+									Designed by Industry evangelist</p>
+							</article>
+						</div>
+						<div class="col col-sm-6 col-md-3 col-lg-6">
+							<article> <i><img src="dist/images/benefits/04.svg" width="56" height="67"    alt=""/></i>
+								<p>Choose your own certificate <br/>
+									in record time</p>
+							</article>
+						</div>
+					</div>
+				</div>
+				</div>
+			</div>
+		</div>
+		<!--Body section end-->
+		<footer>
+			
+			<div class="copyrightWrap">
+				<div class="container">
+					<div class="row">
+						<div class="col-xl-12">
+							<div class="copyright">© 2012–2017 Skillstamps Professional Certification Foundations All ready registared.</div>
+							<div class="topsocial bottom">
+								<ul>
+										<li><a class="fb" href="https://www.facebook.com/Skillstamps/" target="_blank">Facebook</a></li>
+										<li><a class="in" href="https://www.linkedin.com/school/skillstamps/" target="_blank">Linkedin</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>

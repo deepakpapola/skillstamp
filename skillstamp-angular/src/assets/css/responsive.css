@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+@media (max-width:  1199px) { 
+.introSection .container { background:none;}
+.bannerCaption h1 { font-size:40px }
+.bannerCaption { padding-left:15px;}
+.ourCourseWrap .contentWrap { padding:20px;}
+.ourCourseWrap .contentWrap { min-height:auto; clear:left; float:left;}
+.ourCourseWrap .contentWrap p { padding-bottom:70px; min-height:auto;}
+.dashBoardWrap aside.rt ul li { margin-left:4px; margin-right:4px;}
+.dashBoardWrap aside.rt { padding:50px 27px;}
+ }
+ 
+
+ 
+
+@media (max-width: 991px) { 
+.introcontent h1 br, .introcontent p br { display:none;}
+.highlightsWrap .contentWrap.third { border:none;}
+.highlightsWrap .contentWrap.first, .highlightsWrap .contentWrap.second { border-bottom:2px #e5e5e5 solid;}
+.highlightsWrap .fix-gutters > [class^="col-"],
+.highlightsWrap .fix-gutters > [class*=" col-"] {
+  padding-right: 0px;
+  padding-left: 0px;
+}
+.highlightsWrap .row { margin-right:0px; margin-left:0px;}
+.askQuestionWrap { padding:15px;}
+.aboutCouseContent { padding-right:10px;}
+
+.pulse.one { top:155px; left:115px;}
+.pulse.two { top:193px; left:163px;}
+.pulse.three { top:188px; left:317px;}
+.pulse.forth { top:239px; left:472px;}
+.introSection .container { padding-bottom:36px;}
+.bannerBottomContent { position:relative;}
+.homeBannerWrap .verticleMiddleContent section article  { text-align:center;}
+.bannerCaption .viewWrap { text-align:center;}
+.bannerCaption .viewWrap, .bannerCaption .viewWrap .howWork  { display:inline-block; float:none;}
+.bannerBottomContent { background:#614e7a;}
+.benefitsSeciton .contentWrap article  { padding-top:30px;}
+.benefitsSeciton figure { padding-top:50px;}
+.benefitsSeciton .contentWrap article p { font-size:14px; line-height:20px;}
+.benefitsSeciton .contentWrap article p br { display:none;}
+.ourCourseWrap .contentWrap { margin-bottom:15px;}
+.ourCourseWrap .contentWrap p  { padding-bottom:30px;}
+.homeBannerWrap .topsocial { display:none;}
+.mainNav  { margin-right:0px;}
+.topinfo ul li { margin-left:24px;}
+.topinfo ul li span { font-size:14px; font-weight:600;}
+.chooseOption  { padding-top:15px;}
+.dashBoardWrap aside.lt { position:relative; width:100%; clear:left; float:left; padding:5px;}
+.profileDetail  { position:relative; width:100%; left:0;}
+.dashBoardWrap aside.rt { width:100%;  clear:left; float:left; padding:15px;}
+.dashBoardWrap aside.rt ul { width:100%; text-align:center;}
+.dashBoardWrap aside.rt ul li { float:none; display:inline-block; margin-left:8px; margin-right:8px;}
+ }
+
+@media (max-width: 767px) { 
+header { margin-bottom:30px;}
+header .logo  { width:100%; text-align:center;}
+.topinfo  { margin-left:0px; width:100%;}
+.topinfo ul { width:100%; text-align:center;}
+.topinfo ul  li { text-align:center; margin-left:10px; margin-right:10px; float:none; display:inline-block; padding-bottom:15px;}
+.introcontent { text-align:center; padding-top:0px; padding-bottom:30px;}
+.highlightsWrap  { margin-top:60px;}
+.highlightsWrap .contentWrap.first, .highlightsWrap .contentWrap.second, .highlightsWrap .contentWrap.third{ border:none;  border-bottom:2px #e5e5e5 solid;}
+ .highlightsWrap .contentWrap.forth  { border-left:none;}
+ .modulesOfcourse { padding-top:36px;} 
+ .modulesOfcourse_list article  { padding-top:36px;}
+ .aboutCourseWrap { padding-top:50px;}
+ .aboutCouseContent  h1 { margin-bottom:10px;}
+ .aboutaccordian .card-header h5 a  { box-sizing:border-box; display:block; background:url(../images/plus.jpg) no-repeat 97% 22px; padding:14px 0px;  padding-right:20px; }
+ .expersReviewWrap .contentWrap p { padding-right:0px;}
+ .certificateWrap { padding-top:50px;}
+ footer .map { display:none;}
+ footer .content  { position:relative; padding-top:50px; padding-bottom:50px;}
+ .hmBodyWrap { padding-bottom:50px;}
+ .introSection .container { padding-bottom:0px;}
+ .homeBannerWrap .topinfo  { display:none;}
+ .bannerCaption h1 { padding-top:90px; font-size:30px;}
+ .bannerCaption .viewWrap .view a { width:120px; height:40px; line-height:40px; font-size:14px; }
+ .bannerCaption .viewWrap .howWork { margin-left:12px; padding-top:7px;}
+ .scroll-icon { right:30px;} 
+ .bannerBottomContent article { padding:15px 0px;}
+ .bannerBottomContent article h1 { font-size:15px;}
+ .bannerBottomContent article p { font-size:12px;}
+ .benefitsSeciton .contentWrap  h1 { line-height:40px;}
+ .homeBannerWrap { margin-bottom:40px;}
+ .enroleWrap h2 { font-size:30px; margin-bottom:10px;}
+ .enroleFormSeciton input { margin-bottom:15px;}
+ .bannerBottomContent, .benefitsSeciton { display:none;}
+ }
+
+@media (max-width: 575px) { 
+.introcontent h1 { font-size:40px; line-height:45px; margin-bottom:18px; font-weight:400;}
+.introcontent p  { font-size:18px; line-height:24px; padding:0px 20px;}
+.highlightsWrap .contentWrap  { padding:15px;}
+.certificateWrap h1  { margin-bottom:20px;}
+.certificateWrap span { margin-bottom:15px; margin-top:10px;}
+.expersReviewWrap .contentWrap { padding-top:32px;}
+.certificateWrap { padding-bottom:18px;}
+ footer .content .vision { width:250px;}
+ .bannerCaption h1 { font-size:25px; font-weight:600;}
+ .ourCourseWrap { padding-bottom:20px;}
+ .bannerCaption .viewWrap .view { display:block; float:none;}
+ .bannerCaption .viewWrap .howWork { margin-left:0px;}
+ }
+
+
+
+@media (max-width:480px) { 
+.topinfo, .coursesstartime h1, .coursesstartime ul { display:none;}
+.introcontent h1 { font-size:36px; line-height:45px;}
+.highlightsWrap { border-top:2px #e5e5e5 solid;}
+.highlightsWrap .container { width:100%; max-width:100%; padding-left:0px; padding-right:0px;}
+.highlightsWrap .contentSection { border:none;}
+.highlightsWrap .contentWrap.first, .highlightsWrap .contentWrap.second, .highlightsWrap .contentWrap.third, .highlightsWrap .contentWrap.forth { border:none;  border-bottom:2px #e5e5e5 solid;}
+.highlightsWrap .contentWrap  p  br { display:none;}
+}
+
+
+
+
+
+

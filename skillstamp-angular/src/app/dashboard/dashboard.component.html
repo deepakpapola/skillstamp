@@ -1,0 +1,112 @@
+
+<!--Dashboard section end-->
+<div class="dashBoard">
+  <div class="dashBoardWrap">
+
+
+  <aside class="lt">
+    <div class="profileDetail">
+
+  <section>
+  <div class="detail">
+    <figure></figure>
+  <div class="content">
+
+  <strong>
+      <input class="textbox" type="text" [(ngModel)]="cUser.firstName" name='firstName' (blur)="saveEditable()"  required>
+      <input class="textbox" type="text" [(ngModel)]="cUser.lastName" name='lastName' (blur)="saveEditable()"  required>
+  </strong>
+
+  <br/>
+
+  </div>
+  </div>
+  </section>
+  
+  <div class="stampsWrap">
+  <aside>
+  <div class="counterCertificate">
+  <h3>01</h3>
+  <span>Available <br/>
+  Certificates</span>
+  </div>
+  </aside>
+
+  <aside>
+  <div class="membershipstamps">
+  <figure><img src="../../assets/images/certification/stamp.jpg" width="22" height="22"></figure>
+  <span>
+  Membership <br/>
+  Stamps
+  </span>
+  </div>
+  </aside>
+  </div>
+
+  <section>
+  <!-- <p>{{cUser.email}}<br/>
+    {{cUser.phoneNo}}</p> -->
+    <div>email:
+        <input class="textbox" type="text" [(ngModel)]="cUser.email" name='email' (blur)="saveEditable()"  required>
+   
+  </div>
+    <br>
+  <div>phone:
+      <input class="textbox" type="text" [(ngModel)]="cUser.phone" name='phone' (blur)="saveEditable()"  required>
+  </div>
+  </section>
+
+
+  <section>
+  <h2>Enroled Into</h2>
+  <p><strong>{{courseName}}</strong><br/>
+  1283983</p>
+  </section>
+
+
+
+    <h2>
+    How may I help you?
+    </h2>
+    <strong>courses@skillstamps.com</strong>
+
+    <section>
+      
+      <strong>Change Password</strong><br>
+      <input class="textbox" type="password" [(ngModel)]="cUser.password" name='password' (blur)="saveEditable()"  required><br><br>
+      <strong><a  (click)='logout()'>Logout</a></strong>
+      </section>
+
+  </div>
+  </aside>
+
+
+  <aside class="rt">
+  <ul>
+    <li *ngFor="let certificate of certificates; let i=index;">
+  
+    <div class="certificationView" >
+    <figure><img src="{{certificate.certificateImage}}" width="285" height="175"></figure>
+    <article>
+    <h1>{{certificate.certificateName}}</h1>
+    <p>{{certificate.certificateCourseTime}}</p>
+
+      <div *ngIf='!hideme[i]' (click)="hideme[i] = !hideme[i]" class="buyNowWrap">
+          <a>intrest</a>
+          <div class="price"><span><s>Rs 2500/</s></span> R 500</div>
+      </div>
+
+      <div [hidden]="!hideme[i]" class="CerificateAvailablity">
+          <h2>Star From {{certificate.startTime}}</h2>
+          <div class="view"><span style="width:0%"></span></div>
+          </div>
+      </article> 
+  
+    </div>
+    </li>
+  </ul>
+  </aside>
+
+  </div>
+
+</div>
